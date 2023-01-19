@@ -1,0 +1,156 @@
+*, body, html{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    height: 100vh;
+    float: left;
+    background-color: #6B4F4F;
+}
+
+.nav ul {
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav > ul > li > a{
+    color: #fff;
+    padding: 70px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav > ul > li > a:hover{
+    color: #F57328;
+}
+
+.nav > ul > li > a > i{
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff3e4;
+    margin-left: 20%;
+    padding: 0px 16px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.content .view {
+    width: 80%;
+    margin-top: 5%;
+}
+
+.content .view .total{
+    margin-top: 5%;
+    font-size: 1.2em;
+}
+
+
+
+table{
+    width:100%;
+    table-layout: fixed;
+}
+
+.content .view .theader{
+    background-color: #F57328;
+}
+
+.content .tbody {
+    height:500px;
+    overflow-x:auto;
+    margin-top: 0px;
+    border: 1px solid rgba(150, 26, 26, 0.3);
+}
+
+.content .tbody tr:nth-child(even){background-color: #f2f2f2;}
+.content .tbody tr:hover {background-color: #ffe8da;}
+
+th{
+    padding: 20px 15px;
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+td{
+    padding: 15px;
+    text-align: left;
+    vertical-align:middle;
+    color: black;
+    border-bottom: solid 1px rgba(255,255,255,0.1);
+}
+
+tr > td > a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+}
+
+tr > td > a.hapus{
+    background-color: #eb3535;
+}
+
+tr > td > a.hapus:hover{
+    color: white;
+    background-color: crimson;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+tr > td > a.ubah{
+    background-color: #e2c51f;
+}
+
+tr > td > a.ubah:hover{
+    color: white;
+    background-color: #af7200;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+width: 3px;
+} 
+::-webkit-scrollbar-track {
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+} 
+::-webkit-scrollbar-thumb {
+-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+}
+
+

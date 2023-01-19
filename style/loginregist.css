@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    flex-direction: column;
+    height: 100vh;
+    width: 35%;
+    background-color: #6B4F4F;
+}
+
+.left .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10pxpx;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Itim', cursive;
+    height: 10vh;
+}
+
+.left .header .firstname {
+    color: #F57328;
+}
+
+.left .header .lastname {
+    color: white;
+    padding-left: 5px;
+}
+
+.left .title {
+    height: 20vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: #F57328;
+    font-size: 40px;
+    font-family: 'Itim', cursive;
+}
+
+.left .wrapper {
+    text-transform: capitalize;
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    align-items: center;
+}
+
+.left .wrapper .form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+
+.left .wrapper .form ul li {
+    display: flex;
+    flex-direction: column; 
+}
+
+.left .wrapper .form ul li label {
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.left .wrapper .form ul li input {
+    height: 5%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+.left .wrapper .form ul .go{
+    color: white;
+    text-transform: none;
+}
+
+.left .wrapper .form ul .go > a{
+    text-decoration: none;
+    color: #F57328;
+}
+
+.left .wrapper .form ul .button {
+    display: flex;
+    justify-content: center;
+}
+
+.left .wrapper .form ul .button button {
+    background-color: #EED6C4;
+    font-size: 20px;
+    color: #F57328;
+    width: 30%;
+    padding: 1%;
+    border-radius: 10px;
+    font-family: 'Itim', cursive;
+    margin-top: 15%;
+    cursor: pointer;
+    border: none;
+}
+
+.left .wrapper .form ul li .button button:hover {
+    background-color: #F57328;
+    color: #EED6C4;
+    transition: all 0.8s;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+    background-color: #fff3e4;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+}
+
+.right .bumdes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 120px;
+    text-align: center;
+    color: #F57328;
+}
+
+.right .bumdes .bum, .des {
+    font-weight: 900;
+}
+
+.right .bumdes > img {
+    height: 370px;
+    width: 370px;
+}
+
+.right .desc {
+    font-size: 30px;
+    color: #1C6758;
+}
+
+
+
+@media screen and (max-width: 1178px) {
+
+    .left {
+        width: 100%;
+    }
+    .right {
+        display: none;
+    }
+}
+
+
